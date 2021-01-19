@@ -1,2 +1,8 @@
 # twig-education-test-first
-Completed and explained test for Twig Education.
+
+### A completed test for Twig Education. 
+### by @ Andriy Diduh, SaaS software engineer, 
+
+email: andriy.work@yahoo.com | portfolio: https://andriydiduh.com
+
+
