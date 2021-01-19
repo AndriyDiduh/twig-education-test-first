@@ -33,7 +33,17 @@ const groupArrayElements = (inputArray) => {
 
   // First, get the number of items for each piece (for each sub array)
   // - Match.floor rounds our number Down, for example 2.8 shall become 2
-  const amountForEachPiece = Math.floor(originalArray.length / numberOfPieces);
+  // - Match.ceil rounds our number Up, for example 2.1 shall become 3
+  const lowNumber = Math.floor(originalArrayLength / numberOfPieces);
+  const highNumber = Math.ceil(originalArrayLength / numberOfPieces);
+  let amountForEachPiece = 0;
+
+  // We need to switch if we have not enough array items to fill all pieces
+  if (highNumber * numberOfPieces - highNumber >= originalArrayLength) {
+    amountForEachPiece = lowNumber;
+  } else {
+    amountForEachPiece = highNumber;
+  }
 
   // Now we need to take the pieces from the original array and push it to the new one
   // Reverse loops work faster so we will use a while loop, and looks nicer than a for loop
