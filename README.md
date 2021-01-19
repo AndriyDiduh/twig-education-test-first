@@ -5,8 +5,9 @@
 
 email: andriy.work@yahoo.com | portfolio: https://andriydiduh.com
 
+-----------------------------------------------
 
-## Launching the script
+## How to Run the script?
 
 Quick launch, you can run this script by dropping the whole content of the index.js file: 
 
