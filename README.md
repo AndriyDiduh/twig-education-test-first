@@ -22,4 +22,5 @@ default data in a form of an array is provided, and looks like this - [[1, 2, 3,
 
 For the main array to be sorted we can provide numbers and text.
 
+The script accepts only integers as a value for number of pieces.
 

@@ -15,6 +15,15 @@ const groupArrayElements = (inputArray) => {
   // Get the "numberOfPieces" for number of pieces, should be the second element
   let numberOfPieces = inputArray[1];
 
+  // Check for correct data, Integers only
+  numberOfPieces =
+    Number.isInteger &&
+    typeof numberOfPieces === "number" &&
+    isFinite(numberOfPieces) &&
+    Math.floor(numberOfPieces) === numberOfPieces
+      ? numberOfPieces
+      : 0;
+
   // Limit the number of pieces to the max length of the array
   numberOfPieces =
     originalArrayLength < numberOfPieces ? originalArrayLength : numberOfPieces;
